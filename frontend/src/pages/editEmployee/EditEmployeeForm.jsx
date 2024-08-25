@@ -65,7 +65,7 @@ const EditEmployeeForm = ({ employee, onClose }) => {
                 }
             });
 
-            const response = await fetch(`/api/employee/employee/${employee._id}`, {
+            const response = await fetch(`https://rahuk-test.onrender.com/api/employee/employee/${employee._id}`, {
                 method: 'PUT',
                 body: formDataToSubmit,
             });

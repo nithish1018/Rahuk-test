@@ -72,6 +72,7 @@ export const getAllEmployees = async (req, res) => {
 export const deleteEmployee = async (req, res) => {
     try {
         const { id } = req.params;
+        console.log(id);
         const employee = await Employee.findByIdAndDelete(id);
 
         if (!employee) {

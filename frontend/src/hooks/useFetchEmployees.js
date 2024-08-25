@@ -31,7 +31,8 @@ const useFetchEmployees = () => {
     const deleteEmployee = async (id) => {
         try {
             console.log(`Attempting to delete employee with ID: ${id}`);
-            const response = await fetch(`/api/employee/employee/${id}`, {
+            
+            const response = await fetch(`https://rahuk-test.onrender.com/api/employee/employee/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
