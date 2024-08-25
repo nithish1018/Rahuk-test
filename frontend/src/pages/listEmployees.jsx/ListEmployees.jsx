@@ -126,19 +126,19 @@ const EmployeeList = () => {
                                     <td className="border px-4 py-2 text-black">
                                         {employee.image ? (
                                             <>
-                                                {console.log(`${import.meta.env.REACT_APP_API_URL || 'http://localhost:8000'}${employee.image}`)}
+                                                {console.log(`${import.meta.env.REACT_APP_API_URL || 'https://rahuk-test.onrender.com'}${employee.image}`)}
                                                 <img
-                                                    src={`${import.meta.env.REACT_APP_API_URL || 'http://localhost:8000'}${employee.image}`}
+                                                    src={`${import.meta.env.REACT_APP_API_URL || 'https://rahuk-test.onrender.com'}${employee.image}`}
                                                     alt={employee.name}
                                                     className="h-10 w-10 object-cover"
                                                 />
                                             </>
                                         ) : (
                                             <img
-                                            src={profile}
-                                            alt={employee.name}
-                                            className="h-10 w-10 object-cover"
-                                        />
+                                                src={profile}
+                                                alt={employee.name}
+                                                className="h-10 w-10 object-cover"
+                                            />
                                         )}
                                     </td>
                                     <td className="border px-4 py-2 text-black">{employee.name}</td>
