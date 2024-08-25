@@ -7,7 +7,9 @@ import employeRoutes from './routes/employeeroute.js';
 import connectTOMongoDB from './db/connectToMongoDB.js';
 
 const app = express();
+var cors = require('cors')
 dotenv.config();
+app.use(cors())
 app.use(express.json());
 app.use(cookieParser());
 
