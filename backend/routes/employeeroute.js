@@ -8,9 +8,9 @@ const router = express.Router();
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
-router.post('/employee', protectRoute, upload.single('image'), employee);
+router.post('/employee', upload.single('image'), employee);
 router.get('/employees',  getAllEmployees);
-router.delete('/employee/:id', protectRoute, deleteEmployee);
-router.put('/employee/:id', protectRoute, upload.single('image'), updateEmployee);
+router.delete('/employee/:id', deleteEmployee);
+router.put('/employee/:id', upload.single('image'), updateEmployee);
 
 export default router;
