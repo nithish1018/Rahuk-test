@@ -9,7 +9,7 @@ const useFetchEmployees = () => {
     const fetchEmployees = async () => {
         setLoading(true);
         try {
-            const response = await fetch('/api/employee/employees');
+            const response = await fetch('https://rahuk-test.onrender.com/api/employee/employees');
             if (!response.ok) {
                 throw new Error(`Error: ${response.statusText}`);
             }

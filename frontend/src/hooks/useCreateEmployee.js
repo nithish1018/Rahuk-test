@@ -18,7 +18,7 @@ const useCreateEmployee = () => {
             formData.append('course', JSON.stringify(course));
             formData.append('image', image);
 
-            const res = await fetch('/api/employee/employee', {
+            const res = await fetch('https://rahuk-test.onrender.com/api/employee/employee', {
                 method: 'POST',
                 body: formData,
             });
