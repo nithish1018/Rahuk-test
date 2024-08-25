@@ -5,9 +5,9 @@ import cookieParser from 'cookie-parser';
 import authRoutes from './routes/authroute.js';
 import employeRoutes from './routes/employeeroute.js';
 import connectTOMongoDB from './db/connectToMongoDB.js';
+import cors from 'cors';
 
 const app = express();
-var cors = require('cors')
 dotenv.config();
 app.use(cors())
 app.use(express.json());
